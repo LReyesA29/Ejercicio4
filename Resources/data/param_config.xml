@@ -4,17 +4,17 @@
 	  <files>
 	    <file>
 	      <nameEntity>TRANSACTION</nameEntity>
-	      <typeFile>txt</typeFile>
+	      <typeFile>csv</typeFile>
 	    </file>
 	  </files>
 	  <rules>
 	    <rule>
 	      <ruleName>FILTER_REPEAT</ruleName>
-	      <valueRule>2</valueRule> <!-- 0= False, 1 = true -->
+	      <valueRule>1</valueRule> <!-- 0= False, 1 = true -->
 	    </rule>
 	    <rule>
 	      <ruleName>FILTER_ID_CLIENT</ruleName>
-	      <valueRule>1002</valueRule> <!-- Determina el identificador del cliente -->
+	      <valueRule>1001</valueRule> <!-- Determina el identificador del cliente -->
 	    </rule>
 	  </rules>
 	</config>

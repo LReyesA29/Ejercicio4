@@ -1,72 +1,72 @@
 [
   {
-    "id": 11,
-    "clientId": 1002,
-    "amount": 500626.0,
-    "date": "2025-01-12",
+    "id": 1,
+    "clientId": 1001,
+    "amount": 338138.0,
+    "date": "2025-01-02",
     "paymentMethod": "EFECTIVO"
   },
   {
-    "id": 12,
-    "clientId": 1002,
-    "amount": 222333.0,
-    "date": "2025-01-13",
+    "id": 2,
+    "clientId": 1001,
+    "amount": 785956.0,
+    "date": "2025-01-03",
+    "paymentMethod": "TARJETA_DEBITO"
+  },
+  {
+    "id": 3,
+    "clientId": 1001,
+    "amount": 627907.0,
+    "date": "2025-01-04",
+    "paymentMethod": "TARJETA_DEBITO"
+  },
+  {
+    "id": 4,
+    "clientId": 1001,
+    "amount": 747850.0,
+    "date": "2025-01-05",
     "paymentMethod": "EFECTIVO"
   },
   {
-    "id": 13,
-    "clientId": 1002,
-    "amount": 710834.0,
-    "date": "2025-01-14",
-    "paymentMethod": "EFECTIVO"
-  },
-  {
-    "id": 14,
-    "clientId": 1002,
-    "amount": 524569.0,
-    "date": "2025-01-15",
+    "id": 5,
+    "clientId": 1001,
+    "amount": 687041.0,
+    "date": "2025-01-06",
     "paymentMethod": "TARJETA_DEBITO"
   },
   {
-    "id": 15,
-    "clientId": 1002,
-    "amount": 569643.0,
-    "date": "2025-01-16",
+    "id": 6,
+    "clientId": 1001,
+    "amount": 727098.0,
+    "date": "2025-01-07",
     "paymentMethod": "TARJETA_DEBITO"
   },
   {
-    "id": 16,
-    "clientId": 1002,
-    "amount": 333080.0,
-    "date": "2025-01-17",
-    "paymentMethod": "TARJETA_DEBITO"
-  },
-  {
-    "id": 17,
-    "clientId": 1002,
-    "amount": 656207.0,
-    "date": "2025-01-18",
-    "paymentMethod": "TARJETA_DEBITO"
-  },
-  {
-    "id": 18,
-    "clientId": 1002,
-    "amount": 714709.0,
-    "date": "2025-01-19",
-    "paymentMethod": "TARJETA_DEBITO"
-  },
-  {
-    "id": 19,
-    "clientId": 1002,
-    "amount": 562628.0,
-    "date": "2025-01-20",
+    "id": 7,
+    "clientId": 1001,
+    "amount": 692054.0,
+    "date": "2025-01-08",
     "paymentMethod": "TARJETA_CREDITO"
   },
   {
-    "id": 20,
-    "clientId": 1002,
-    "amount": 266091.0,
-    "date": "2025-01-21",
-    "paymentMethod": "EFECTIVO"
+    "id": 8,
+    "clientId": 1001,
+    "amount": 327413.0,
+    "date": "2025-01-09",
+    "paymentMethod": "TARJETA_DEBITO"
+  },
+  {
+    "id": 9,
+    "clientId": 1001,
+    "amount": 260333.0,
+    "date": "2025-01-10",
+    "paymentMethod": "TARJETA_DEBITO"
+  },
+  {
+    "id": 10,
+    "clientId": 1001,
+    "amount": 794211.0,
+    "date": "2025-01-11",
+    "paymentMethod": "TARJETA_CREDITO"
   }
 ]
