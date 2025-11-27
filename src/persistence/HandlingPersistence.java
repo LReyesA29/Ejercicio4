@@ -41,6 +41,7 @@ public class HandlingPersistence extends FilePlain implements IActionsFile {
 
 	public HandlingPersistence() {
 		this.listTransactions = new ArrayList<>();
+		this.listFilterTransactions = new ArrayList<>();
 		this.listFiles = new ArrayList<>();
 		this.listRules = new ArrayList<>();
 		this.testList = new ArrayList<>();
