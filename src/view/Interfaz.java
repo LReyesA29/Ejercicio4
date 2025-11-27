@@ -59,28 +59,23 @@ public class Interfaz {
             case 1:
                 rule_FILTER_REPEAT();
                 showDump();
-
                 break;
             case 2:
                 rule_FILTER_ID_CLIENT();
                 showDump();
-
                 break;
             case 3:
                 rule_FILTER_ID_CLIENT_AND_REPEAT();
                 showDump();
                 break;
-
             default:
                 System.out.println("Opción inválida.");
                 System.out.println(opc);
                 break;
         }
-
     }
 
     private void rule_FILTER_ID_CLIENT_AND_REPEAT() {
-
         Rule ruleIdClient = handlingPersistence.getListRules().stream()
                 .filter(r -> "FILTER_ID_CLIENT".equalsIgnoreCase(r.getName()))
                 .findFirst()
@@ -93,13 +88,11 @@ public class Interfaz {
             try {
                 clientId = Integer.parseInt(ruleIdClient.getValue());
             } catch (NumberFormatException e) {
-                System.out.println(
-                        "Error de formato en el valor de la regla FILTER_ID_CLIENT: " + ruleIdClient.getValue());
+                System.out.println("Error de formato en el valor de la regla FILTER_ID_CLIENT: " + ruleIdClient.getValue());
             }
         }
 
         List<Transaction> list = handlingPersistence.getListTransactions();
-
         List<Transaction> listAfterClientFilter = new ArrayList<>();
 
         if (clientId != null) {
@@ -126,6 +119,7 @@ public class Interfaz {
                 .orElse(null);
 
         boolean bandRepeatFilter = false;
+        List<Transaction> finalList = new ArrayList<>();
         if (ruleRepeat == null) {
             System.out.println("No se encontró la regla FILTER_REPEAT. No se filtran repetidos.");
         } else {
@@ -136,8 +130,6 @@ public class Interfaz {
                 System.out.println("La regla FILTER_REPEAT está desactivada.");
             }
         }
-
-        List<Transaction> finalList = new ArrayList<>();
 
         if (bandRepeatFilter) {
             List<Transaction> listToProcess = listAfterClientFilter;
@@ -198,8 +190,7 @@ public class Interfaz {
     }
 
     public void showReports() {
-        System.out.println(
-                "1. Mostrar Reportes Filtrados " + handlingPersistence.getListFiles().getFirst().getTypeFile());
+        System.out.println("1. Mostrar Reportes Filtrados " + handlingPersistence.getListFiles().getFirst().getTypeFile());
         System.out.println("2. Mostrar Reportes Sin filtar");
         System.out.println("3. Volver");
 
@@ -212,9 +203,7 @@ public class Interfaz {
                     System.out.println("No hay datos filtrados");
                     return;
                 }
-
                 Reports();
-
                 break;
             case 2:
                 handlingPersistence.setTestList(handlingPersistence.getListTransactions());
@@ -232,7 +221,6 @@ public class Interfaz {
     public void Reports() {
         Graphic barras = new Graphic(handlingPersistence);
         barras.showBarChartStockByCategory();
-
     }
 
     private void rule_FILTER_ID_CLIENT() {
@@ -256,7 +244,6 @@ public class Interfaz {
         System.out.println("\nFiltrando Transacciones por Id de cliente ... " + clientId);
 
         List<Transaction> t = handlingPersistence.getListTransactions();
-
         List<Transaction> listFilter = new ArrayList<>();
 
         for (Transaction r : t) {
@@ -304,7 +291,6 @@ public class Interfaz {
         }
 
         List<Transaction> listT = handlingPersistence.getListTransactions();
-
         List<Transaction> listFilter = new ArrayList<>();
         Set<String> validateSet = new HashSet<>();
         for (Transaction t : listT) {
@@ -374,7 +360,6 @@ public class Interfaz {
             i++;
         }
         System.out.println(i + ". Todas");
-
     }
 
     private int readInt() {

@@ -28,9 +28,7 @@ public class Graphic {
         this.handlingPersistence = handlingPersistence;
     }
 
-    /**
-     * Gráfico de barras: cantidad total de stock por categoría de producto.
-     */
+    
     public void showBarChartStockByCategory() {
         List<Transaction> products = handlingPersistence.getTestList();
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();

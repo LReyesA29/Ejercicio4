@@ -10,7 +10,7 @@
 	  <rules>
 	    <rule>
 	      <ruleName>FILTER_REPEAT</ruleName>
-	      <valueRule>0</valueRule> <!-- 0= False, 1 = true -->
+	      <valueRule>2</valueRule> <!-- 0= False, 1 = true -->
 	    </rule>
 	    <rule>
 	      <ruleName>FILTER_ID_CLIENT</ruleName>
